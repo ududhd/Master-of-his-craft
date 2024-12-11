@@ -31131,7 +31131,7 @@ Transform:
   m_GameObject: {fileID: 1096846604}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 838.7909, y: 597.2374, z: 0}
+  m_LocalPosition: {x: 815, y: 609, z: 0}
   m_LocalScale: {x: 38.950455, y: 26.813972, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40382,8 +40382,9 @@ GameObject:
   - component: {fileID: 1434712145}
   - component: {fileID: 1434712147}
   - component: {fileID: 1434712148}
+  - component: {fileID: 1434712149}
   m_Layer: 0
-  m_Name: autoWhiteB_0
+  m_Name: autogon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40398,7 +40399,7 @@ Transform:
   m_GameObject: {fileID: 1434712143}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -68.51892, y: 857.75543, z: 0}
+  m_LocalPosition: {x: -2, y: 836, z: 0}
   m_LocalScale: {x: 45.960495, y: 33.10938, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40519,6 +40520,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 1, y: -0.36}
   speed: 5
+--- !u!50 &1434712149
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434712143}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1438623136
 GameObject:
   m_ObjectHideFlags: 0
@@ -41850,8 +41878,8 @@ Transform:
   m_GameObject: {fileID: 1479569863}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 933.3385, y: 571.539, z: 0}
-  m_LocalScale: {x: 38.52625, y: 30.431004, z: 1}
+  m_LocalPosition: {x: 945.7604, y: 570.0367, z: 0}
+  m_LocalScale: {x: 62.613487, y: 40.94719, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2139834209}
@@ -50973,8 +51001,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1832524347}
   - component: {fileID: 1832524348}
+  - component: {fileID: 1832524349}
   m_Layer: 0
-  m_Name: road02_0 (4)
+  m_Name: spawn1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51050,6 +51079,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1832524349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832524346}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b63608194ef19f429a2a01d4194a607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Teleport_Point: {x: 0, y: 0, z: 0}
 --- !u!1 &1844929710
 GameObject:
   m_ObjectHideFlags: 0
@@ -56976,6 +57018,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1999257837}
   - component: {fileID: 1999257838}
+  - component: {fileID: 1999257841}
+  - component: {fileID: 1999257840}
+  - component: {fileID: 1999257839}
   m_Layer: 0
   m_Name: policeCarA_0
   m_TagString: Untagged
@@ -56993,7 +57038,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1267.0872, y: 560.56256, z: 0}
-  m_LocalScale: {x: 40.61645, y: 29.920933, z: 1}
+  m_LocalScale: {x: 45.960495, y: 33.10938, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2139834209}
@@ -57053,6 +57098,93 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1999257839
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999257836}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.08, y: 1.65}
+    newSize: {x: 2.08, y: 1.65}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.08, y: 1.65}
+  m_EdgeRadius: 0
+--- !u!50 &1999257840
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999257836}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1999257841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999257836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38bddcf079f15741b3e3e2a111b7773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0}
+  speed: 5
 --- !u!1 &2006688309
 GameObject:
   m_ObjectHideFlags: 0
@@ -59271,8 +59403,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2093444402}
   - component: {fileID: 2093444403}
+  - component: {fileID: 2093444404}
+  - component: {fileID: 2093444405}
   m_Layer: 0
-  m_Name: road02_0 (7)
+  m_Name: konec1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59348,6 +59482,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2093444404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093444401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b63608194ef19f429a2a01d4194a607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Teleport_Point: {x: -2, y: 836, z: 0}
+--- !u!61 &2093444405
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093444401}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.028068542, y: 0.08069849}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12, y: 2.56}
+    newSize: {x: 5.12, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.176137, y: 2.721397}
+  m_EdgeRadius: 0
 --- !u!1 &2102377606
 GameObject:
   m_ObjectHideFlags: 0
