@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      free-icon-nut-bolt-15603642_0: 5168626043704188423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

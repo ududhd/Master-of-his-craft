@@ -10,6 +10,7 @@ public class Main : MonoBehaviour
         click = 1;
         gayka = 0;
         price = 50;
+        text_up.text = "Улучшить: " + price;
     }
 
     // Update is called once per frame
