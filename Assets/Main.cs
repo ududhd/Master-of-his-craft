@@ -8,7 +8,7 @@ public class Main : MonoBehaviour
     void Start()
     {
         click = 1;
-        gayka = 1000;
+        gayka = 0;
         price = 50;
     }
 
@@ -17,7 +17,7 @@ public class Main : MonoBehaviour
     {
         num  += click;
         control += click;
-        if(control > 19)
+        if(control > 39)
         {
             control = 0;
             gayka++;
