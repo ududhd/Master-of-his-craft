@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kalendar_0: -9086557300200603100
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

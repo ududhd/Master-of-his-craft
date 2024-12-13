@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      reward_icon_0: -2039429697459446263
+      reward_icon_1: -2066182782448682267
+      reward_icon_2: 2202276561793419218
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
