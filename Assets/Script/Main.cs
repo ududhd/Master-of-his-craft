@@ -6,7 +6,7 @@ public class Main : MonoBehaviour
 {
     private int num, gayka, control, click, price, Count2;
     public TextMeshProUGUI Count, Text_gayka, Text_gayka1, Text_gayka2, text_up, Count1;
-    public GameObject main, shop, celendar, zaiavka;
+    public GameObject main, shop, celendar, zaiavka, acepte;
     void Start()
     {
         click = 1;
@@ -71,16 +71,20 @@ public class Main : MonoBehaviour
     }
     public void Zaiavka()
     {
-        if (true)
+        if(acepte)
         {
-            control -= Count2;
-            if (control > 20)
+
+            if (control > 0 )
             {
-                control = 0;
-                gayka +=50;
-                Text_gayka.text = gayka.ToString();
+            Count2 -= 1;
+            Count1.text = Count2.ToString();
             }
-            Count.text = num.ToString();
+            if (Count2 <= 0)
+            {
+            Count2 = 1;
+            gayka += 50;
+            Text_gayka2.text = gayka.ToString();
+            }
         }
     }
 }
