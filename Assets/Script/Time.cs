@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Time : MonoBehaviour
@@ -17,7 +18,6 @@ public class Time : MonoBehaviour
         if(StartTime >= EndTime)
         {
             Destroy(gameObject);
-            return;
         }
     }
 }

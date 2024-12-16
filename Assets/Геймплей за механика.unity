@@ -1599,8 +1599,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1667,7 +1667,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.62828, y: 127.69}
+  m_AnchoredPosition: {x: 8, y: 122.000015}
   m_SizeDelta: {x: 36.5446, y: 50.542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &634986877
@@ -3485,6 +3485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4093cf170aed6a943a87e253c06352c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirstCompletQuest: 0
   Count: {fileID: 1305189105}
   Text_gayka: {fileID: 1206939704}
   Text_gayka1: {fileID: 910505018}
@@ -3498,7 +3499,6 @@ MonoBehaviour:
   zaiavka: {fileID: 1890383595}
   acepte: {fileID: 1752426403}
   successMessage: {fileID: 1283267034}
-  FirstCompletQuest: {fileID: 0}
 --- !u!114 &1216453730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3682,7 +3682,6 @@ GameObject:
   - component: {fileID: 1283267037}
   - component: {fileID: 1283267036}
   - component: {fileID: 1283267035}
-  - component: {fileID: 1283267038}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -3748,20 +3747,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1, y: 226}
   m_SizeDelta: {x: -697.2852, y: -555.5294}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1283267038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283267034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d226900ca16c7034f9b84c4d6a43ef88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StartTime: 0
-  EndTime: 5
 --- !u!1 &1305189104
 GameObject:
   m_ObjectHideFlags: 0
