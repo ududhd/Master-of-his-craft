@@ -3,9 +3,10 @@ using TMPro;
 
 public class Main : MonoBehaviour
 {
+    public bool FirstCompletQuest;
     private int num, gayka, control, click, price, Count2;
     public TextMeshProUGUI Count, Text_gayka, Text_gayka1, Text_gayka2, text_up, Count1, requiredClicksText;
-    public GameObject main, shop, celendar, zaiavka, acepte, successMessage, FirstCompletQuest;
+    public GameObject main, shop, celendar, zaiavka, acepte, successMessage;
 
     void Start()
     {
@@ -17,7 +18,7 @@ public class Main : MonoBehaviour
         requiredClicksText.text = "клики: " + Count2;
         successMessage.SetActive(false); // Изначально уведомление скрыто
         Text_gayka2.text = gayka.ToString();
-        FirstCompletQuest.SetActive(false);
+        FirstCompletQuest = false;
     }
 
     public void ClickButton()
@@ -108,7 +109,7 @@ public class Main : MonoBehaviour
 
     void CompleteQuest()
     {
-        FirstCompletQuest.SetActive(true);
+        FirstCompletQuest = true;
         if (FirstCompletQuest == true)
         {
             gayka += 50; // Награда за выполнение задания
@@ -117,7 +118,7 @@ public class Main : MonoBehaviour
             Debug.Log("Задание выполнено!");
             return;
         }
-        else
+        else if (FirstCompletQuest == true) 
         {
             Count2 *= 2;
             Count1.text = Count2.ToString();
