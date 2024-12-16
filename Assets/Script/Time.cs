@@ -17,6 +17,7 @@ public class Time : MonoBehaviour
         if(StartTime >= EndTime)
         {
             Destroy(gameObject);
+            return;
         }
     }
 }
