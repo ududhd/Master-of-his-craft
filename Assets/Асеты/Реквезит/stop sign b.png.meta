@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e3736d901cdbf7741a049dc4d3424441
+guid: c8785379a4585884ba4016376825065f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8849670444767818047
-    second: avatar_icon_0
+      213: 3919349608381038166
+    second: stop sign b_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: avatar_icon_0
+      name: stop sign b_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 122
-        height: 82
+        width: 34
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f31b8a7c16850da70800000000000000
-      internalID: 8849670444767818047
+      spriteID: 65e3e1604b3546630800000000000000
+      internalID: 3919349608381038166
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      avatar_icon_0: 8849670444767818047
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
