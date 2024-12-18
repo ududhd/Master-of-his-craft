@@ -4,7 +4,7 @@ using TMPro;
 public class Main : MonoBehaviour
 {
     public bool FirstCompletQuest;
-    private int num, gayka, control, click, price, Count2, CountQuest;
+    private int num, gayka, control, click, price, CountQuest, Count2;
     public TextMeshProUGUI Count, Text_gayka, Text_gayka1, Text_gayka2, text_up, Count1, requiredClicksText;
     public GameObject main, shop, celendar, zaiavka, acepte, successMessage;
 
@@ -14,7 +14,7 @@ public class Main : MonoBehaviour
         gayka = 0;
         price = 50;
         text_up.text = "Улучшить: " + price;
-        Count2 = 20;
+        Count2 = 21;
         requiredClicksText.text = "клики: " + Count2;
         successMessage.SetActive(false); // Изначально уведомление скрыто
         Text_gayka2.text = gayka.ToString();
@@ -86,55 +86,59 @@ public class Main : MonoBehaviour
     }
 
 
-void CompleteQuest()
-{
-    if (!FirstCompletQuest)
+    
+    void CompleteQuest()
     {
-        FirstCompletQuest = true;
-        gayka += 50; // Награда за выполнение первого задания
-        Text_gayka2.text = gayka.ToString();
-        successMessage.SetActive(true); // Показываем уведомление об успешном выполнении
-        Debug.Log("Первое задание выполнено!");
+        
+        if (!FirstCompletQuest)
+        {
+            
+            FirstCompletQuest = true;
+            gayka += 50; // Награда за выполнение задания
+            Text_gayka2.text = gayka.ToString();
+            successMessage.SetActive(true); // Показываем уведомление об успешном выполнении
+            Debug.Log("Задание выполнено!");
 
-        // Подготовка ко второму заданию
-        CountQuest++;
-        Count2 = 40; // Устанавливаем количество кликов для второго задания
-        Count1.text = Count2.ToString();
-        requiredClicksText.text = "клики: " + Count2;
-        Debug.Log("Начинается второе задание!");
+            successMessage.SetActive(false);
+            CountQuest++;
+            Count2 = 41;
+            Count1.text = Count2.ToString();
+        }
+        else if (CountQuest == 1) 
+        {
+            Debug.Log("2");
+            successMessage.SetActive(true); // Показываем уведомление об успешном выполнении
+            Debug.Log("Задание выполнено!");
+            gayka *= 2;
+            successMessage.SetActive(false);
+        }
+
+            
+
     }
-    else if (CountQuest == 1)
-    {
-        gayka *= 2; // Награда за выполнение второго задания
-        Text_gayka2.text = gayka.ToString();
-        successMessage.SetActive(true); // Показываем уведомление об успешном выполнении
-        Debug.Log("Второе задание выполнено!");
-        CountQuest++;
-    }
-}
-
-
     void StartQuest()
     {
-        if (CountQuest == 1) // Если начато второе задание
+        if (CountQuest == 1)
         {
-            Count2 = 40; // Устанавливаем количество кликов для второго задания
-            requiredClicksText.text = "клики: " + Count2;
+            
+            Count2 = 41;
+            requiredClicksText.text = "клики:" + Count2;
             Count1.text = Count2.ToString();
-            successMessage.SetActive(true); // Скрываем уведомление об успешном выполнении
-            Debug.Log("Начато второе задание!");
+            
+
         }
-        else // Если начато первое задание
+        
+        else
         {
-            Count2 = 20; // Инициализация счетчика кликов для первого задания
-            requiredClicksText.text = "клики: " + Count2;
-            Count1.text = Count2.ToString();
-            successMessage.SetActive(false); // Скрываем уведомление об успешном выполнении
-            Debug.Log("Начато первое задание!");
+            
+            Count2 = 21; // Инициализация счетчика кликов для задания
+            requiredClicksText.text = "клики:" + Count2;
+            Count1.text = Count2.ToString(); // Обновление UI
+
         }
     }
 
-    void Zaiavka()
+    public void Zaiavka()
     {
         if (Count2 > 0)
         {
@@ -148,6 +152,4 @@ void CompleteQuest()
             }
         }
     }
-
-
 }
